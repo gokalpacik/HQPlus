@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A2325FE3-9DA7-48B3-937C-6842A5843215}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3-WebAPI", "Task3-WebAPI", "{C6F1430A-E172-48AC-ABAC-91036DB1B0F8}"
 EndProject
@@ -29,15 +32,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQPlus.Reporting", "HQPlus.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQPlus.WebExtraction", "HQPlus.WebExtraction\HQPlus.WebExtraction.csproj", "{EDF26950-244B-4E95-98B5-B0DEC7AB4CC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQPlus.WebExtraction.Tests", "HQPlus.WebExtraction.Tests\HQPlus.WebExtraction.Tests.csproj", "{48CE9514-2385-41AB-AA02-C2C14AC66588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQPlus.WebExtraction.Tests", "HQPlus.WebExtraction.Tests\HQPlus.WebExtraction.Tests.csproj", "{48CE9514-2385-41AB-AA02-C2C14AC66588}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQPlus.Reporting.Tests", "HQPlus.Reporting.Tests\HQPlus.Reporting.Tests.csproj", "{7796AEEC-5D49-4725-AA9D-574BB44C7A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQPlus.Reporting.Tests", "HQPlus.Reporting.Tests\HQPlus.Reporting.Tests.csproj", "{7796AEEC-5D49-4725-AA9D-574BB44C7A86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{336AD8F7-86F3-43E6-8E1F-A51624ACD0D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQPlus.Application.UnitTests", "HQPlus.Application.Tests\HQPlus.Application.UnitTests.csproj", "{2D373E40-893D-4D7F-BFC5-4B711918B74E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQPlus.Application.UnitTests", "HQPlus.Application.Tests\HQPlus.Application.UnitTests.csproj", "{2D373E40-893D-4D7F-BFC5-4B711918B74E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQPlus.API.IntegratrionTests", "HQPlus.API.IntegratrionTests\HQPlus.API.IntegratrionTests.csproj", "{A2C21602-CB58-4BD0-B0BC-890A5806D4D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQPlus.API.IntegratrionTests", "HQPlus.API.IntegratrionTests\HQPlus.API.IntegratrionTests.csproj", "{A2C21602-CB58-4BD0-B0BC-890A5806D4D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
