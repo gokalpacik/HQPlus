@@ -1,6 +1,6 @@
 # Introduction
 
-Solution consists of 3 main projects. HQPlus.WebExtraction, HQPlus.Reporting, HQPlus.Api respectively. 
+Solution consists of 3 main projects, relying on the .NET CORE 5.0 SDK. HQPlus.WebExtraction, HQPlus.Reporting, HQPlus.Api respectively. 
 
 To run projects seperatly the specific project that wants to be runned should be chosed as a start-up project.
 
