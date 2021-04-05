@@ -1,4 +1,5 @@
-﻿using HQPlus.Reporting.Models;
+﻿using HQPlus.Reporting.Utilities;
+using HQPlus.Reporting.Models;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using System;
@@ -31,7 +32,7 @@ namespace HQPlus.Reporting.Services
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             ExcelPackage excel = new ExcelPackage();
 
-            var workSheet = excel.Workbook.Worksheets.Add("HotelRates");
+            var workSheet = excel.Workbook.Worksheets.Add(ReportConsts.WorkSheetName);
 
             workSheet.TabColor = System.Drawing.Color.Black;
             workSheet.DefaultRowHeight = 12;
@@ -41,13 +42,13 @@ namespace HQPlus.Reporting.Services
             workSheet.Row(1).Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
             workSheet.Row(1).Style.Font.Bold = true;
 
-            workSheet.Cells[1, 1].Value = "ARRIVAL_DATE";
-            workSheet.Cells[1, 2].Value = "DEPARTURE_DATE";
-            workSheet.Cells[1, 3].Value = "PRICE";
-            workSheet.Cells[1, 4].Value = "CURRENCY";
-            workSheet.Cells[1, 5].Value = "RATENAME";
-            workSheet.Cells[1, 6].Value = "ADULTS";
-            workSheet.Cells[1, 7].Value = "BREAKFAST_INCLUDED";
+            workSheet.Cells[1, 1].Value = ReportConsts.ArrivalDateColumnName;
+            workSheet.Cells[1, 2].Value = ReportConsts.DepartureDteColumnNae;
+            workSheet.Cells[1, 3].Value = ReportConsts.PriceColumnName;
+            workSheet.Cells[1, 4].Value = ReportConsts.CurrencyColumnName;
+            workSheet.Cells[1, 5].Value = ReportConsts.RateNameColumnName;
+            workSheet.Cells[1, 6].Value = ReportConsts.AdultsColumnName;
+            workSheet.Cells[1, 7].Value = ReportConsts.BreakfastIncludedColumnName;
 
             int recordIndex = 2;
             foreach (var hotelRate in hotelWithRates.HotelRates)
